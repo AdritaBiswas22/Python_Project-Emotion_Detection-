@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Kept deliberately small: all the styling lives in Tailwind classes in the
+   components. Dark mode is a stretch goal, so this pins one light theme
+   instead of following the operating system setting. */
+body {
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}

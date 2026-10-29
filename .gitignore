@@ -1,0 +1,23 @@
+# Local Claude Code settings, specific to one machine
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Hugging Face dataset cache, created by training/train.py
+.cache/
+
+# Node / Next.js — the frontend has its own .gitignore too
+node_modules/
+.next/
+
+# Local environment files. Never commit these; set the same variables in the
+# Vercel and Render dashboards instead.
+.env
+.env.local
+
+# Note: backend/model/ is intentionally NOT ignored — Render deploys straight
+# from the repo, so the trained model files need to be committed.

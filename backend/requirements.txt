@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+
+# scikit-learn and joblib are pinned on purpose. model.joblib is a pickle
+# written by these exact versions, and loading a pickle with a different
+# scikit-learn version either warns loudly or fails outright. If you retrain on
+# newer versions, update these two pins to match.
+scikit-learn==1.9.0
+joblib==1.5.3
